@@ -43,5 +43,8 @@
     "vite": "^2.3.5",
     "vite-plugin-components": "^0.10.4",
     "vue-tsc": "^0.0.24"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
