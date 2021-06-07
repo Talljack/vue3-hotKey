@@ -2,16 +2,16 @@
   "name": "vue3-hotkey",
   "description": "Hotkey Hooks for Vue 3",
   "author": "Talljack <1442770751@qq.com>",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/types/index.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && npm run build:esm && npm run build:cjs && npm run build:types",
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build:types": "tsc -d --emitDeclarationOnly --declarationDir dist/types",
+    "build:esm": "tsc --module es2015 --target es5 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
+    "build:types": "tsc --emitDeclarationOnly --declaration --project tsconfig.json --declarationDir dist/types",
     "test": "jest"
   },
   "repository": {
@@ -19,6 +19,7 @@
     "url": "https://github.com/Talljack/vue3-hotKey"
   },
   "dependencies": {
+    "@types/express": "4.17.8",
     "@vue/test-utils": "^2.0.0-rc.6",
     "vue": "^3.0.5",
     "vue-template-compiler": "^2.6.13"
