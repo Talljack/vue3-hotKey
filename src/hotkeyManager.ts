@@ -6,6 +6,7 @@ class HotKeyManager {
   constructor () {
     window.addEventListener('keydown', (e) => {
       this.pressedKeys.set(e.key, e.repeat)
+      console.log('key', e.key)
       const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()))
       this.registeredHotkeys[keyComb]?.forEach((hotKey) => {
         if (!e.repeat || hotKey?.repeat) {

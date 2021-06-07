@@ -1,4 +1,5 @@
 import useHotKey from "./useHotKey"
-export { HotKeys} from './interface'
+import { HotKeys } from './interface'
 
 export default useHotKey
+export type HotKey = HotKeys
