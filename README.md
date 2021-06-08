@@ -3,7 +3,7 @@ Vue3 hooks of Keyboard events
 
 ## 🦄 Usage
 ```javascript
-import useHotkey, { HotKey } from 'vue3-hotKey'
+import useHotkey, { HotKey } from 'vue3-hotkey'
 import { ref } from 'vue'
 setup() {
   const hotkeys = ref<HotKey[]>([
@@ -29,11 +29,11 @@ setup() {
 ## 📦 Install
 
 ```bash
-npm i vue3-hotKey
+npm i vue3-hotkey
 
 or
 
-yarn add vue3-hotKey
+yarn add vue3-hotkey
 ```
 
 ## 🌸 Thanks
