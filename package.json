@@ -3,7 +3,7 @@
   "description": "Hotkey Hooks for Vue 3",
   "keywords": "vue3, hotkey",
   "author": "Talljack <1442770751@qq.com>",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/types/index.d.ts",
