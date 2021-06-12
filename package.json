@@ -19,6 +19,7 @@
     "type": "git",
     "url": "https://github.com/Talljack/vue3-hotKey"
   },
+  "homepage": "https://github.com/Talljack/vue3-hotKey#readme",
   "dependencies": {
     "@types/express": "4.17.8",
     "@vue/test-utils": "^2.0.0-rc.6",
@@ -44,6 +45,7 @@
     "vue-tsc": "^0.0.24"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ]
 }
