@@ -5,6 +5,10 @@ class HotKeyManager {
 
   constructor () {
     window.addEventListener('keydown', (e) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return
+      }
+
       this.pressedKeys.set(e.key, e.repeat)
       console.log('key', e.key)
       const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()))
