@@ -680,10 +680,10 @@ vue-tsc@^0.0.24:
   dependencies:
     unzipper "0.10.11"
 
-vue3-hotkey@^0.1.4:
-  version "0.1.5"
-  resolved "https://registry.npmjs.org/vue3-hotkey/-/vue3-hotkey-0.1.5.tgz#7d437303cf932de6d08a5ee7f3eada34f55e9ae6"
-  integrity sha512-7BONXI1kxf858AD7ThWSc+vhyaVO9wrlTPXNaV9FgfqQPp+Um3y7TYDUxJZYKWpKWzuZD+GykzbURt2l0zRESQ==
+vue3-hotkey@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/vue3-hotkey/-/vue3-hotkey-1.0.1.tgz#2fb6fc2749ab1629cca7ad89dccd6e345c0d26dd"
+  integrity sha512-91LTIkrNAv+9w5wu7HSwleC/qRzBw4wXhswLTy9ZseTmU2CasH4PRkX3yP8tw7aMOTMsGKGekBiZ2ojM+2qOxg==
   dependencies:
     "@types/express" "4.17.8"
     "@vue/test-utils" "^2.0.0-rc.6"

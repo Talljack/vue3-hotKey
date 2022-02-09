@@ -1,4 +1,4 @@
-export interface HotKeys {
+export interface HotKey {
   keys: string[]
   preventDefault?: boolean
   repeat?: boolean

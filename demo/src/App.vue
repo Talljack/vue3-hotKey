@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, watch } from 'vue'
-import useHotkey, { HotKey } from '../../src/index'
+import { defineComponent, ref } from 'vue'
+import useHotkey, { HotKey } from 'vue3-hotkey'
 
 export default defineComponent({
   name: 'App',

@@ -1,14 +1,14 @@
 import { onUnmounted } from "vue"
 import manager from './hotkeyManager'
-import { HotKeys } from "./interface"
+import { HotKey } from "./interface"
 
-export default (hotKeys: HotKeys[]): () => void => {
+export default (hotKeys: HotKey[]): () => void => {
   hotKeys.forEach((hotkey) => manager.registerHotKey(hotkey))
   onUnmounted(() => {
     hotKeys.forEach((hk) => manager.removeHotKey(hk))
   })
   return () => {
-      hotKeys.map((hk: HotKeys) => () => {
+      hotKeys.map((hk: HotKey) => () => {
       manager.removeHotKey(hk)
     })
   }

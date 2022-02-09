@@ -1,6 +1,6 @@
-import { HotKeys, KeyCodeMap } from './interface'
+import { HotKey, KeyCodeMap } from './interface'
 class HotKeyManager {
-  readonly registeredHotkeys: Record<string, HotKeys[]> = {}
+  readonly registeredHotkeys: Record<string, HotKey[]> = {}
   readonly pressedKeys = new Map<string, boolean>()
 
   constructor () {
@@ -22,7 +22,7 @@ class HotKeyManager {
     })
   }
 
-  registerHotKey = (hotkey: HotKeys) => {
+  registerHotKey = (hotkey: HotKey) => {
     const keyComb = this.getKeyComb([...hotkey.keys])
     if (!this.registeredHotkeys[keyComb]) {
       this.registeredHotkeys[keyComb] = []
@@ -42,7 +42,7 @@ class HotKeyManager {
     return convertKeys.sort().join(' ')
   }
 
-  removeHotKey = (hotKey: HotKeys) => {
+  removeHotKey = (hotKey: HotKey) => {
     const keyComb = this.getKeyComb([...hotKey.keys])
     const index = this.registeredHotkeys[keyComb]?.indexOf(hotKey) ?? -1
     if (index !== -1) {
