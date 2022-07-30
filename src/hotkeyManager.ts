@@ -11,7 +11,7 @@ class HotKeyManager {
       this.registeredHotkeys[keyComb]?.forEach((hotKey) => {
         if (!e.repeat || hotKey?.repeat) {
           if (hotKey.preventDefault) e.preventDefault()
-          hotKey.handler([...hotKey.keys])
+          hotKey.handler([...hotKey.keys], e)
         }
       })
     })
