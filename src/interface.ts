@@ -2,7 +2,7 @@ export interface HotKey {
   keys: string[]
   preventDefault?: boolean
   repeat?: boolean
-  handler: (keys: string[], e: Event) => any
+  handler: (keys: string[], e: KeyboardEvent) => any
 }
 
 export const KeyCodeMap = {
