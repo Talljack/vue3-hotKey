@@ -2,7 +2,7 @@
 Vue3 hooks of Keyboard events
 
 ## 🦄 Usage
-```javascript
+```ts
 import useHotkey, { HotKey } from 'vue3-hotkey'
 import { ref } from 'vue'
 setup() {
@@ -29,7 +29,7 @@ setup() {
 ## 📦 Install
 
 ```bash
-npm i vue3-hotkey
+pnpm i vue3-hotkey
 
 or
 
@@ -43,4 +43,4 @@ This project is heavily inspired by the following awesome projects.
 
 ## 📄 License
 
-[MIT License](https://github.com/Talljack/vue3-hotKey/blob/main/LICENSE) © 2021-PRESENT [caoyugang_1](https://github.com/Talljack)
+[MIT License](https://github.com/Talljack/vue3-hotKey/blob/main/LICENSE) © 2021-PRESENT [Talljack](https://github.com/Talljack)
