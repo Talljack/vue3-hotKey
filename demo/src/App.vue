@@ -36,12 +36,13 @@ export default defineComponent({
         }
       }
     ])
-    const stop = useHotkey(hotkeys.value)
+
+    const stopArr = useHotkey(hotkeys.value)
     const handleCount = () => {
       countRef.value ++
     }
     setTimeout(() => {
-      stop()
+      stopArr.forEach(fn => fn())
     }, 2000);
     return {
       count: countRef,
