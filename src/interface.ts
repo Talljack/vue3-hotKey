@@ -23,3 +23,5 @@ export const KeyCodeMap = {
   right: 'ArrowRight',
   bottom: "ArrowDown"
 }
+
+export type RemoveHandler = () => void

@@ -1,15 +1,15 @@
 import { fireEvent, render } from '@testing-library/vue'
-import useHotkey from '../src'
+import useHotkey, { RemoveHandler } from '../src'
 
 test('hotkey works', async () => {
   let triggered = false
 
-  const { container } = render({
+  const { container, unmount } = render({
     template: '<div></div>',
     setup () {
       useHotkey([
         {
-          keys: ['ctrl', 'space'],
+          keys: ['ctrl', 'b'],
           handler () {
             triggered = true
           }
@@ -20,13 +20,14 @@ test('hotkey works', async () => {
 
   expect(triggered).toBeFalsy()
 
-  await fireEvent.keyDown(container, { key: 'Control' })
-  await fireEvent.keyDown(container, { key: 'Space' })
+  await fireEvent.keyDown(window, { key: 'Control' })
+  await fireEvent.keyDown(window, { key: 'b'})
 
-  expect(triggered).toBeTruthy()
+  expect(triggered).toBe(true)
 
   await fireEvent.keyUp(container, { key: 'Control' })
   await fireEvent.keyUp(container, { key: 'b' })
+  unmount();
 })
 
 test('hotkey gets removed when component unmounts', async () => {
@@ -61,43 +62,55 @@ test('hotkey gets removed when component unmounts', async () => {
 
 test('removing hotkey with returned function works', async () => {
   let triggered = false
-
-  const { container } = render({
+  let stopArr: RemoveHandler[]= []
+  const { container, unmount } = render({
     template: '<div></div>',
     setup () {
-      const stop = useHotkey([
+      stopArr = useHotkey([
         {
-          keys: ['ctrl', 'space'],
+          keys: ['ctrl', 'b'],
           handler () {
             triggered = true
           }
         }
       ])
-
-      stop()
     }
   })
 
   expect(triggered).toBeFalsy()
 
   await fireEvent.keyDown(container, { key: 'Control' })
-  await fireEvent.keyDown(container, { key: 'Space' })
+  await fireEvent.keyDown(container, { key: 'b' })
+
+  expect(triggered).toBeTruthy()
+
+  await fireEvent.keyUp(container, { key: 'Control' })
+  await fireEvent.keyUp(container, { key: 'Space' })
+
+  stopArr.forEach(fn => fn());
+
+  triggered = false;
+
+  await fireEvent.keyDown(container, { key: 'Control' })
+  await fireEvent.keyDown(container, { key: 'b' })
 
   expect(triggered).toBeFalsy()
 
   await fireEvent.keyUp(container, { key: 'Control' })
-  await fireEvent.keyUp(container, { key: 'Space' })
+  await fireEvent.keyUp(container, { key: 'b' })
+  unmount();
+
 })
 
 test('setting repeat to true works', async () => {
   let timesTriggered = 0
 
-  const { container } = render({
+  const { container, unmount } = render({
     template: '<div></div>',
     setup () {
       useHotkey([
         {
-          keys: ['ctrl', 'space'],
+          keys: ['ctrl', 'b'],
           repeat: true,
           handler () {
             timesTriggered += 1
@@ -110,31 +123,32 @@ test('setting repeat to true works', async () => {
   expect(timesTriggered).toBe(0)
 
   await fireEvent.keyDown(container, { key: 'Control' })
-  await fireEvent.keyDown(container, { key: 'Space' })
+  await fireEvent.keyDown(container, { key: 'b' })
 
   expect(timesTriggered).toBe(1)
 
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
 
   expect(timesTriggered).toBe(6)
 
   await fireEvent.keyUp(container, { key: 'Control' })
-  await fireEvent.keyUp(container, { key: 'Space' })
+  await fireEvent.keyUp(container, { key: 'b' })
+  unmount();
 })
 
 test('setting repeat to false works', async () => {
   let timesTriggered = 0
 
-  const { container } = render({
+  const { container, unmount } = render({
     template: '<div></div>',
     setup () {
       useHotkey([
         {
-          keys: ['ctrl', 'space'],
+          keys: ['ctrl', 'b'],
           repeat: false,
           handler () {
             timesTriggered += 1
@@ -147,18 +161,19 @@ test('setting repeat to false works', async () => {
   expect(timesTriggered).toBe(0)
 
   await fireEvent.keyDown(container, { key: 'Control' })
-  await fireEvent.keyDown(container, { key: 'Space' })
+  await fireEvent.keyDown(container, { key: 'b' })
 
   expect(timesTriggered).toBe(1)
 
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
-  await fireEvent.keyDown(container, { key: 'Space', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
+  await fireEvent.keyDown(container, { key: 'b', repeat: true })
 
   expect(timesTriggered).toBe(1)
 
   await fireEvent.keyUp(container, { key: 'Control' })
-  await fireEvent.keyUp(container, { key: 'Space' })
+  await fireEvent.keyUp(container, { key: 'b' })
+  unmount();
 })

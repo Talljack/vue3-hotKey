@@ -1,7 +1,8 @@
 import useHotKey from "./useHotKey"
-import { HotKey } from './interface'
+import type { HotKey, RemoveHandler } from './interface'
 
 export default useHotKey
-export {
-  HotKey
+export type {
+  HotKey,
+  RemoveHandler
 }
