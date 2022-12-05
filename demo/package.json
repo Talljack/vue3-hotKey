@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.0.5",
-    "vue3-hotkey": "^1.0.1"
+    "vue3-hotkey": "^1.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
