@@ -1,6 +1,7 @@
 {
   "name": "vue3-hotkey",
   "description": "Hotkey Hooks for Vue 3",
+  "type": "module",
   "keywords": [
     "vue3",
     "hotkey",
