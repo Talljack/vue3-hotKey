@@ -4,21 +4,23 @@ class HotKeyManager {
   readonly pressedKeys = new Map<string, boolean>()
 
   constructor () {
-    window.addEventListener('keydown', (e) => {
-      this.pressedKeys.set(e.key, e.repeat)
-      const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()))
-      this.registeredHotkeys[keyComb]?.forEach((hotKey) => {
-        if (!e.repeat || hotKey?.repeat) {
-          if (hotKey.preventDefault) e.preventDefault()
-          hotKey.handler([...hotKey.keys], e)
+    if (typeof window !== 'undefined') {
+      window.addEventListener('keydown', (e) => {
+        this.pressedKeys.set(e.key, e.repeat)
+        const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()))
+        this.registeredHotkeys[keyComb]?.forEach((hotKey) => {
+          if (!e.repeat || hotKey?.repeat) {
+            if (hotKey.preventDefault) e.preventDefault()
+            hotKey.handler([...hotKey.keys], e)
+          }
+        })
+      })
+      window.addEventListener('keyup', (e) => {
+        if (this.pressedKeys.has(e.key)) {
+          this.pressedKeys.delete(e.key)
         }
       })
-    })
-    window.addEventListener('keyup', (e) => {
-      if (this.pressedKeys.has(e.key)) {
-        this.pressedKeys.delete(e.key)
-      }
-    })
+    }
   }
 
   registerHotKey = (hotkey: HotKey) => {
