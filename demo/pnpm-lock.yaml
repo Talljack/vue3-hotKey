@@ -1,282 +1,61 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
 
-specifiers:
-  '@vitejs/plugin-vue': ^1.2.2
-  '@vue/compiler-sfc': ^3.0.5
-  typescript: ^4.1.3
-  vite: ^2.3.3
-  vue: ^3.0.5
-  vue-tsc: ^0.0.24
-  vue3-hotkey: ^1.0.1
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
-  vue: 3.2.45
-  vue3-hotkey: 1.0.2
+  vue:
+    specifier: ^3.3.4
+    version: 3.3.8(typescript@5.2.2)
+  vue3-hotkey:
+    specifier: ^1.0.5
+    version: 1.0.5(typescript@5.2.2)
 
 devDependencies:
-  '@vitejs/plugin-vue': 1.10.2_vite@2.9.15
-  '@vue/compiler-sfc': 3.2.45
-  typescript: 4.9.3
-  vite: 2.9.15
-  vue-tsc: 0.0.24
+  '@vitejs/plugin-vue':
+    specifier: ^4.4.1
+    version: 4.4.1(vite@4.5.0)(vue@3.3.8)
+  '@vue/compiler-sfc':
+    specifier: ^3.3.4
+    version: 3.3.8
+  typescript:
+    specifier: ^5.2.2
+    version: 5.2.2
+  vite:
+    specifier: ^4.4.9
+    version: 4.5.0
+  vue-tsc:
+    specifier: ^1.8.15
+    version: 1.8.22(typescript@5.2.2)
 
 packages:
 
-  /@babel/helper-string-parser/7.19.4:
-    resolution: {integrity: sha1-ONOstlS0cBqbd/sGFalvd1w6nmM=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@babel/helper-string-parser/-/helper-string-parser-7.19.4.tgz}
+  /@babel/helper-string-parser@7.19.4:
+    resolution: {integrity: sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==}
     engines: {node: '>=6.9.0'}
 
-  /@babel/helper-validator-identifier/7.19.1:
-    resolution: {integrity: sha1-fuqDTPMpAf/cGn7lVeL5wn4knKI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz}
+  /@babel/helper-validator-identifier@7.19.1:
+    resolution: {integrity: sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==}
     engines: {node: '>=6.9.0'}
 
-  /@babel/parser/7.20.5:
-    resolution: {integrity: sha1-fzxzNf5BdmXZKfNK5dzq5MBAFeg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@babel/parser/-/parser-7.20.5.tgz}
+  /@babel/parser@7.23.3:
+    resolution: {integrity: sha512-uVsWNvlVsIninV2prNz/3lHCb+5CJ+e+IUBfbjToAHODtfGYLfCFuY4AU7TskI+dAKk+njsPiBjq1gKTvZOBaw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
       '@babel/types': 7.20.5
 
-  /@babel/types/7.20.5:
-    resolution: {integrity: sha1-4gauNwtTk9lN/R0EzWh8rOU++oQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@babel/types/-/types-7.20.5.tgz}
+  /@babel/types@7.20.5:
+    resolution: {integrity: sha512-c9fst/h2/dcF7H+MJKZ2T0KjEQ8hY/BNnDk/H3XY8C4Aw/eWQXWn/lWntHF9ooUBnGmEvbfGrTgLWc+um0YDUg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@esbuild/linux-loong64/0.14.54:
-    resolution: {integrity: sha1-3ipL5ni9TQ0f+7hubed5zeWZkCg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz}
-    engines: {node: '>=12'}
-    cpu: [loong64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@types/body-parser/1.19.2:
-    resolution: {integrity: sha1-rqIFnii3ZYY5CBNHrE+rPeFm5vA=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/body-parser/-/body-parser-1.19.2.tgz}
-    dependencies:
-      '@types/connect': 3.4.35
-      '@types/node': 18.11.10
-    dev: false
-
-  /@types/connect/3.4.35:
-    resolution: {integrity: sha1-X89q5EXkAh0fwiGaSHPMc6O7KtE=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/connect/-/connect-3.4.35.tgz}
-    dependencies:
-      '@types/node': 18.11.10
-    dev: false
-
-  /@types/express-serve-static-core/4.17.31:
-    resolution: {integrity: sha1-oROe/qtOcyODS7AibmKsAZ9HSy8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/express-serve-static-core/-/express-serve-static-core-4.17.31.tgz}
-    dependencies:
-      '@types/node': 18.11.10
-      '@types/qs': 6.9.7
-      '@types/range-parser': 1.2.4
-    dev: false
-
-  /@types/express/4.17.8:
-    resolution: {integrity: sha1-PfQpMpMxfmHGATfSc6LpbNjV8no=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/express/-/express-4.17.8.tgz}
-    dependencies:
-      '@types/body-parser': 1.19.2
-      '@types/express-serve-static-core': 4.17.31
-      '@types/qs': 6.9.7
-      '@types/serve-static': 1.15.0
-    dev: false
-
-  /@types/mime/3.0.1:
-    resolution: {integrity: sha1-X48rygpYY8tpvAsKzYjJbLHUrhA=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/mime/-/mime-3.0.1.tgz}
-    dev: false
-
-  /@types/node/18.11.10:
-    resolution: {integrity: sha1-TGR1nzwjQ7fmxLnK92HHo6Bc7jQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/node/-/node-18.11.10.tgz}
-    dev: false
-
-  /@types/qs/6.9.7:
-    resolution: {integrity: sha1-Y7t9Bn2xB8weRXwwO8JdUR/r9ss=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/qs/-/qs-6.9.7.tgz}
-    dev: false
-
-  /@types/range-parser/1.2.4:
-    resolution: {integrity: sha1-zWZ7z90CUhOq+3ylkVqTJZCs3Nw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/range-parser/-/range-parser-1.2.4.tgz}
-    dev: false
-
-  /@types/serve-static/1.15.0:
-    resolution: {integrity: sha1-x5MP9hr7M04SGp2ngKrA2bjzQVU=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/serve-static/-/serve-static-1.15.0.tgz}
-    dependencies:
-      '@types/mime': 3.0.1
-      '@types/node': 18.11.10
-    dev: false
-
-  /@vitejs/plugin-vue/1.10.2_vite@2.9.15:
-    resolution: {integrity: sha1-1xhHnieJ2KlLY+API/GJi6I5JTo=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vitejs/plugin-vue/-/plugin-vue-1.10.2.tgz}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      vite: ^2.5.10
-    dependencies:
-      vite: 2.9.15
-    dev: true
-
-  /@vue/compiler-core/3.2.45:
-    resolution: {integrity: sha1-2TESB9lvbr1fRmC+Ep+5nwHdtBs=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/compiler-core/-/compiler-core-3.2.45.tgz}
-    dependencies:
-      '@babel/parser': 7.20.5
-      '@vue/shared': 3.2.45
-      estree-walker: 2.0.2
-      source-map: 0.6.1
-
-  /@vue/compiler-dom/3.2.45:
-    resolution: {integrity: sha1-xDzBXlDaYuzBakLyYi0l3F/Zfc4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/compiler-dom/-/compiler-dom-3.2.45.tgz}
-    dependencies:
-      '@vue/compiler-core': 3.2.45
-      '@vue/shared': 3.2.45
-
-  /@vue/compiler-sfc/3.2.45:
-    resolution: {integrity: sha1-f3mJzATsnnxVrNQGgnosTpaHLHA=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/compiler-sfc/-/compiler-sfc-3.2.45.tgz}
-    dependencies:
-      '@babel/parser': 7.20.5
-      '@vue/compiler-core': 3.2.45
-      '@vue/compiler-dom': 3.2.45
-      '@vue/compiler-ssr': 3.2.45
-      '@vue/reactivity-transform': 3.2.45
-      '@vue/shared': 3.2.45
-      estree-walker: 2.0.2
-      magic-string: 0.25.9
-      postcss: 8.4.19
-      source-map: 0.6.1
-
-  /@vue/compiler-ssr/3.2.45:
-    resolution: {integrity: sha1-vSBgS25k6hU0TVtieMQUEZHJg7I=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/compiler-ssr/-/compiler-ssr-3.2.45.tgz}
-    dependencies:
-      '@vue/compiler-dom': 3.2.45
-      '@vue/shared': 3.2.45
-
-  /@vue/reactivity-transform/3.2.45:
-    resolution: {integrity: sha1-B6yDuBOFUMg9+1DbQ83h4OXoEk0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/reactivity-transform/-/reactivity-transform-3.2.45.tgz}
-    dependencies:
-      '@babel/parser': 7.20.5
-      '@vue/compiler-core': 3.2.45
-      '@vue/shared': 3.2.45
-      estree-walker: 2.0.2
-      magic-string: 0.25.9
-
-  /@vue/reactivity/3.2.45:
-    resolution: {integrity: sha1-QSpFtXTeYBvlpKXZqMvU3uRmL/A=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/reactivity/-/reactivity-3.2.45.tgz}
-    dependencies:
-      '@vue/shared': 3.2.45
-    dev: false
-
-  /@vue/runtime-core/3.2.45:
-    resolution: {integrity: sha1-etfvmyUZ1BBiowxvoAHsQ6xUnH8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/runtime-core/-/runtime-core-3.2.45.tgz}
-    dependencies:
-      '@vue/reactivity': 3.2.45
-      '@vue/shared': 3.2.45
-    dev: false
-
-  /@vue/runtime-dom/3.2.45:
-    resolution: {integrity: sha1-Gi727irYdiBvu+KohFVLui0Pr1k=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/runtime-dom/-/runtime-dom-3.2.45.tgz}
-    dependencies:
-      '@vue/runtime-core': 3.2.45
-      '@vue/shared': 3.2.45
-      csstype: 2.6.21
-    dev: false
-
-  /@vue/server-renderer/3.2.45_vue@3.2.45:
-    resolution: {integrity: sha1-ypMGoMErBTCholDkT0oKusa4Hz8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/server-renderer/-/server-renderer-3.2.45.tgz}
-    peerDependencies:
-      vue: 3.2.45
-    dependencies:
-      '@vue/compiler-ssr': 3.2.45
-      '@vue/shared': 3.2.45
-      vue: 3.2.45
-    dev: false
-
-  /@vue/shared/3.2.45:
-    resolution: {integrity: sha1-o//6dInq//ONmE4j0CNuIwyBi8I=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/shared/-/shared-3.2.45.tgz}
-
-  /@vue/test-utils/2.2.5_vue@3.2.45:
-    resolution: {integrity: sha1-86eXLeSa0X0Yaxn2uwCG9XsdFxs=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/test-utils/-/test-utils-2.2.5.tgz}
-    peerDependencies:
-      vue: ^3.0.1
-    dependencies:
-      vue: 3.2.45
-    dev: false
-
-  /balanced-match/1.0.2:
-    resolution: {integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/balanced-match/-/balanced-match-1.0.2.tgz}
-    dev: true
-
-  /big-integer/1.6.51:
-    resolution: {integrity: sha1-DfkqXZiAVg0/8tX9ICRciJ0TBoY=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/big-integer/-/big-integer-1.6.51.tgz}
-    engines: {node: '>=0.6'}
-    dev: true
-
-  /binary/0.3.0:
-    resolution: {integrity: sha1-n2BVO8XOjDOG87VTz/R0Yq3sqnk=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/binary/-/binary-0.3.0.tgz}
-    dependencies:
-      buffers: 0.1.1
-      chainsaw: 0.1.0
-    dev: true
-
-  /bluebird/3.4.7:
-    resolution: {integrity: sha1-9y12C+Cbf3bQjtj66Ysomo0F+rM=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/bluebird/-/bluebird-3.4.7.tgz}
-    dev: true
-
-  /brace-expansion/1.1.11:
-    resolution: {integrity: sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/brace-expansion/-/brace-expansion-1.1.11.tgz}
-    dependencies:
-      balanced-match: 1.0.2
-      concat-map: 0.0.1
-    dev: true
-
-  /buffer-indexof-polyfill/1.0.2:
-    resolution: {integrity: sha1-0nMhNcWZnGSyd/z5savjSYJUcpw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/buffer-indexof-polyfill/-/buffer-indexof-polyfill-1.0.2.tgz}
-    engines: {node: '>=0.10'}
-    dev: true
-
-  /buffers/0.1.1:
-    resolution: {integrity: sha1-skV5w77U1tOWru5tmorn9Ugqt7s=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/buffers/-/buffers-0.1.1.tgz}
-    engines: {node: '>=0.2.0'}
-    dev: true
-
-  /chainsaw/0.1.0:
-    resolution: {integrity: sha1-XqtQsor+WAdNDVgpE4iCi15fvJg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/chainsaw/-/chainsaw-0.1.0.tgz}
-    dependencies:
-      traverse: 0.3.9
-    dev: true
-
-  /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/concat-map/-/concat-map-0.0.1.tgz}
-    dev: true
-
-  /core-util-is/1.0.3:
-    resolution: {integrity: sha1-pgQtNjTCsn6TKPg3uWX6yDgI24U=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/core-util-is/-/core-util-is-1.0.3.tgz}
-    dev: true
-
-  /csstype/2.6.21:
-    resolution: {integrity: sha1-LvuFt8xVyAAXxmpa18vZMf2jqQ4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/csstype/-/csstype-2.6.21.tgz}
-    dev: false
-
-  /de-indent/1.0.2:
-    resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/de-indent/-/de-indent-1.0.2.tgz}
-    dev: false
-
-  /duplexer2/0.1.4:
-    resolution: {integrity: sha1-ixLauHjA1p4+eJEFFmKjL8a93ME=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/duplexer2/-/duplexer2-0.1.4.tgz}
-    dependencies:
-      readable-stream: 2.3.7
-    dev: true
-
-  /esbuild-android-64/0.14.54:
-    resolution: {integrity: sha1-UF9BgyiEMTu6/7J3BLi8qi2GFr4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-android-64/-/esbuild-android-64-0.14.54.tgz}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-android-arm64/0.14.54:
-    resolution: {integrity: sha1-jOadfKuklkbgCZaP5XVKIamHF3E=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-android-arm64/-/esbuild-android-arm64-0.14.54.tgz}
+  /@esbuild/android-arm64@0.18.20:
+    resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [android]
@@ -284,17 +63,26 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-darwin-64/0.14.54:
-    resolution: {integrity: sha1-JLpnuajLiQo8CNkBj4h8wiHN2iU=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-darwin-64/-/esbuild-darwin-64-0.14.54.tgz}
+  /@esbuild/android-arm@0.18.20:
+    resolution: {integrity: sha512-fyi7TDI/ijKKNZTUJAQqiG5T7YjJXgnzkURqmGj13C6dCqckZBLdl4h7bkhHt/t0WP+zO9/zwroDvANaOqO5Sw==}
     engines: {node: '>=12'}
-    cpu: [x64]
-    os: [darwin]
+    cpu: [arm]
+    os: [android]
     requiresBuild: true
     dev: true
     optional: true
 
-  /esbuild-darwin-arm64/0.14.54:
-    resolution: {integrity: sha1-P3zbeIiO4F5IjSUKK9qrH6Zxv3M=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.54.tgz}
+  /@esbuild/android-x64@0.18.20:
+    resolution: {integrity: sha512-8GDdlePJA8D6zlZYJV/jnrRAi6rOiNaCC/JclcXpB+KIuvfBN4owLtgzY2bsxnx666XjJx2kDPUmnTtR8qKQUg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-arm64@0.18.20:
+    resolution: {integrity: sha512-bxRHW5kHU38zS2lPTPOyuyTm+S+eobPUnTNkdJEfAddYgEcll4xkT8DB9d2008DtTbl7uJag2HuE5NZAZgnNEA==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [darwin]
@@ -302,17 +90,17 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-freebsd-64/0.14.54:
-    resolution: {integrity: sha1-CSUPmXpW7UZQ8+GXnJBf/EC76U0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.54.tgz}
+  /@esbuild/darwin-x64@0.18.20:
+    resolution: {integrity: sha512-pc5gxlMDxzm513qPGbCbDukOdsGtKhfxD1zJKXjCCcU7ju50O7MeAZ8c4krSJcOIJGFR+qx21yMMVYwiQvyTyQ==}
     engines: {node: '>=12'}
     cpu: [x64]
-    os: [freebsd]
+    os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /esbuild-freebsd-arm64/0.14.54:
-    resolution: {integrity: sha1-uvtG7QT8X5fL2wFthpR6eVefjkg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.54.tgz}
+  /@esbuild/freebsd-arm64@0.18.20:
+    resolution: {integrity: sha512-yqDQHy4QHevpMAaxhhIwYPMv1NECwOvIpGCZkECn8w2WFHXjEwrBn3CeNIYsibZ/iZEUemj++M26W3cNR5h+Tw==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [freebsd]
@@ -320,26 +108,26 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-linux-32/0.14.54:
-    resolution: {integrity: sha1-4qjEqO/cNVQFMlAz/OvrlB94H+U=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-32/-/esbuild-linux-32-0.14.54.tgz}
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-64/0.14.54:
-    resolution: {integrity: sha1-3l/boclWZs9yNp9StAsDvnEiZlI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-64/-/esbuild-linux-64-0.14.54.tgz}
+  /@esbuild/freebsd-x64@0.18.20:
+    resolution: {integrity: sha512-tgWRPPuQsd3RmBZwarGVHZQvtzfEBOreNuxEMKFcd5DaDn2PbBxfwLcj4+aenoh7ctXcbXmOQIn8HI6mCSw5MQ==}
     engines: {node: '>=12'}
     cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm64@0.18.20:
+    resolution: {integrity: sha512-2YbscF+UL7SQAVIpnWvYwM+3LskyDmPhe31pE7/aoTMFKKzIc9lLbyGUpmmb8a8AixOL61sQ/mFh3jEjHYFvdA==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /esbuild-linux-arm/0.14.54:
-    resolution: {integrity: sha1-osHf9tDyHb6PxpmKEiZ1Uz3fzVk=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-arm/-/esbuild-linux-arm-0.14.54.tgz}
+  /@esbuild/linux-arm@0.18.20:
+    resolution: {integrity: sha512-/5bHkMWnq1EgKr1V+Ybz3s1hWXok7mDFUMQ4cG10AfW3wL02PSZi5kFpYKrptDsgb2WAJIvRcDm+qIvXf/apvg==}
     engines: {node: '>=12'}
     cpu: [arm]
     os: [linux]
@@ -347,17 +135,26 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-linux-arm64/0.14.54:
-    resolution: {integrity: sha1-2uTNQq6Xh0aLalwVjaTIToOwzos=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.54.tgz}
+  /@esbuild/linux-ia32@0.18.20:
+    resolution: {integrity: sha512-P4etWwq6IsReT0E1KHU40bOnzMHoH73aXp96Fs8TIT6z9Hu8G6+0SHSw9i2isWrD2nbx2qo5yUqACgdfVGx7TA==}
     engines: {node: '>=12'}
-    cpu: [arm64]
+    cpu: [ia32]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /esbuild-linux-mips64le/0.14.54:
-    resolution: {integrity: sha1-2ZGOnky5cvjW2ujoZVv57hMe2jQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.54.tgz}
+  /@esbuild/linux-loong64@0.18.20:
+    resolution: {integrity: sha512-nXW8nqBTrOpDLPgPY9uV+/1DjxoQ7DoB2N8eocyq8I9XuqJ7BiAMDMf9n1xZM9TgW0J8zrquIb/A7s3BJv7rjg==}
+    engines: {node: '>=12'}
+    cpu: [loong64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-mips64el@0.18.20:
+    resolution: {integrity: sha512-d5NeaXZcHp8PzYy5VnXV3VSd2D328Zb+9dEq5HE6bw6+N86JVPExrA6O68OPwobntbNJ0pzCpUFZTo3w0GyetQ==}
     engines: {node: '>=12'}
     cpu: [mips64el]
     os: [linux]
@@ -365,8 +162,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-linux-ppc64le/0.14.54:
-    resolution: {integrity: sha1-P5oPbUEHP7GmQGgIRcfeUplfE34=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.54.tgz}
+  /@esbuild/linux-ppc64@0.18.20:
+    resolution: {integrity: sha512-WHPyeScRNcmANnLQkq6AfyXRFr5D6N2sKgkFo2FqguP44Nw2eyDlbTdZwd9GYk98DZG9QItIiTlFLHJHjxP3FA==}
     engines: {node: '>=12'}
     cpu: [ppc64]
     os: [linux]
@@ -374,8 +171,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-linux-riscv64/0.14.54:
-    resolution: {integrity: sha1-YYhTwCgXimGDe8eZ0gE9RpXkUcg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.14.54.tgz}
+  /@esbuild/linux-riscv64@0.18.20:
+    resolution: {integrity: sha512-WSxo6h5ecI5XH34KC7w5veNnKkju3zBRLEQNY7mv5mtBmrP/MjNBCAlsM2u5hDBlS3NGcTQpoBvRzqBcRtpq1A==}
     engines: {node: '>=12'}
     cpu: [riscv64]
     os: [linux]
@@ -383,8 +180,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-linux-s390x/0.14.54:
-    resolution: {integrity: sha1-0YhcTFp2u7Wg/hguLIxg654p8qY=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-linux-s390x/-/esbuild-linux-s390x-0.14.54.tgz}
+  /@esbuild/linux-s390x@0.18.20:
+    resolution: {integrity: sha512-+8231GMs3mAEth6Ja1iK0a1sQ3ohfcpzpRLH8uuc5/KVDFneH6jtAJLFGafpzpMRO6DzJ6AvXKze9LfFMrIHVQ==}
     engines: {node: '>=12'}
     cpu: [s390x]
     os: [linux]
@@ -392,8 +189,17 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-netbsd-64/0.14.54:
-    resolution: {integrity: sha1-aa6Rei/yQbffHb8iuvBL0zA0noE=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.54.tgz}
+  /@esbuild/linux-x64@0.18.20:
+    resolution: {integrity: sha512-UYqiqemphJcNsFEskc73jQ7B9jgwjWrSayxawS6UVFZGWrAAtkzjxSqnoclCXxWtfwLdzU+vTpcNYhpn43uP1w==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/netbsd-x64@0.18.20:
+    resolution: {integrity: sha512-iO1c++VP6xUBUmltHZoMtCUdPlnPGdBom6IrO4gyKPFFVBKioIImVooR5I83nTew5UOYrk3gIJhbZh8X44y06A==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
@@ -401,8 +207,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-openbsd-64/0.14.54:
-    resolution: {integrity: sha1-20yElSh6NQpnkN4i7eokelfF1Hs=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.54.tgz}
+  /@esbuild/openbsd-x64@0.18.20:
+    resolution: {integrity: sha512-e5e4YSsuQfX4cxcygw/UCPIEP6wbIL+se3sxPdCiMbFLBWu0eiZOJ7WoD+ptCLrmjZBK1Wk7I6D/I3NglUGOxg==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
@@ -410,8 +216,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-sunos-64/0.14.54:
-    resolution: {integrity: sha1-VCh+49pz04RLchwhvIDB3H4b99o=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-sunos-64/-/esbuild-sunos-64-0.14.54.tgz}
+  /@esbuild/sunos-x64@0.18.20:
+    resolution: {integrity: sha512-kDbFRFp0YpTQVVrqUd5FTYmWo45zGaXe0X8E1G/LKFC0v8x0vWrhOWSLITcCn63lmZIxfOMXtCfti/RxN/0wnQ==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [sunos]
@@ -419,26 +225,8 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-windows-32/0.14.54:
-    resolution: {integrity: sha1-+Kr5pWZ2MLQPD7OqN78Bu9NAzjE=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-windows-32/-/esbuild-windows-32-0.14.54.tgz}
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-windows-64/0.14.54:
-    resolution: {integrity: sha1-v1S1G9PpsPGIb/2yJKQXYDHqCvQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-windows-64/-/esbuild-windows-64-0.14.54.tgz}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-windows-arm64/0.14.54:
-    resolution: {integrity: sha1-k30VZ1oV5LDk+v26o6Aad2or6YI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.54.tgz}
+  /@esbuild/win32-arm64@0.18.20:
+    resolution: {integrity: sha512-ddYFR6ItYgoaq4v4JmQQaAI5s7npztfV4Ag6NrhiaW0RrnOXqBkgwZLofVTlq1daVTQNhtI5oieTvkRPfZrePg==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
@@ -446,331 +234,365 @@ packages:
     dev: true
     optional: true
 
-  /esbuild/0.14.54:
-    resolution: {integrity: sha1-i0Tc8rDxpm/CJFmUPcz0d1NemqI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esbuild/-/esbuild-0.14.54.tgz}
+  /@esbuild/win32-ia32@0.18.20:
+    resolution: {integrity: sha512-Wv7QBi3ID/rROT08SABTS7eV4hX26sVduqDOTe1MvGMjNd3EjOz4b7zeexIR62GTIEKrfJXKL9LFxTYgkyeu7g==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-x64@0.18.20:
+    resolution: {integrity: sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@jridgewell/sourcemap-codec@1.4.15:
+    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+
+  /@vitejs/plugin-vue@4.4.1(vite@4.5.0)(vue@3.3.8):
+    resolution: {integrity: sha512-HCQG8VDFDM7YDAdcj5QI5DvUi+r6xvo9LgvYdk7LSkUNwdpempdB5horkMSZsbdey9Ywsf5aaU8kEPw9M5kREA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^4.0.0
+      vue: ^3.2.25
+    dependencies:
+      vite: 4.5.0
+      vue: 3.3.8(typescript@5.2.2)
+    dev: true
+
+  /@volar/language-core@1.10.10:
+    resolution: {integrity: sha512-nsV1o3AZ5n5jaEAObrS3MWLBWaGwUj/vAsc15FVNIv+DbpizQRISg9wzygsHBr56ELRH8r4K75vkYNMtsSNNWw==}
+    dependencies:
+      '@volar/source-map': 1.10.10
+    dev: true
+
+  /@volar/source-map@1.10.10:
+    resolution: {integrity: sha512-GVKjLnifV4voJ9F0vhP56p4+F3WGf+gXlRtjFZsv6v3WxBTWU3ZVeaRaEHJmWrcv5LXmoYYpk/SC25BKemPRkg==}
+    dependencies:
+      muggle-string: 0.3.1
+    dev: true
+
+  /@volar/typescript@1.10.10:
+    resolution: {integrity: sha512-4a2r5bdUub2m+mYVnLu2wt59fuoYWe7nf0uXtGHU8QQ5LDNfzAR0wK7NgDiQ9rcl2WT3fxT2AA9AylAwFtj50A==}
+    dependencies:
+      '@volar/language-core': 1.10.10
+      path-browserify: 1.0.1
+    dev: true
+
+  /@vue/compiler-core@3.3.8:
+    resolution: {integrity: sha512-hN/NNBUECw8SusQvDSqqcVv6gWq8L6iAktUR0UF3vGu2OhzRqcOiAno0FmBJWwxhYEXRlQJT5XnoKsVq1WZx4g==}
+    dependencies:
+      '@babel/parser': 7.23.3
+      '@vue/shared': 3.3.8
+      estree-walker: 2.0.2
+      source-map-js: 1.0.2
+
+  /@vue/compiler-dom@3.3.8:
+    resolution: {integrity: sha512-+PPtv+p/nWDd0AvJu3w8HS0RIm/C6VGBIRe24b9hSyNWOAPEUosFZ5diwawwP8ip5sJ8n0Pe87TNNNHnvjs0FQ==}
+    dependencies:
+      '@vue/compiler-core': 3.3.8
+      '@vue/shared': 3.3.8
+
+  /@vue/compiler-sfc@3.3.8:
+    resolution: {integrity: sha512-WMzbUrlTjfYF8joyT84HfwwXo+8WPALuPxhy+BZ6R4Aafls+jDBnSz8PDz60uFhuqFbl3HxRfxvDzrUf3THwpA==}
+    dependencies:
+      '@babel/parser': 7.23.3
+      '@vue/compiler-core': 3.3.8
+      '@vue/compiler-dom': 3.3.8
+      '@vue/compiler-ssr': 3.3.8
+      '@vue/reactivity-transform': 3.3.8
+      '@vue/shared': 3.3.8
+      estree-walker: 2.0.2
+      magic-string: 0.30.5
+      postcss: 8.4.31
+      source-map-js: 1.0.2
+
+  /@vue/compiler-ssr@3.3.8:
+    resolution: {integrity: sha512-hXCqQL/15kMVDBuoBYpUnSYT8doDNwsjvm3jTefnXr+ytn294ySnT8NlsFHmTgKNjwpuFy7XVV8yTeLtNl/P6w==}
+    dependencies:
+      '@vue/compiler-dom': 3.3.8
+      '@vue/shared': 3.3.8
+
+  /@vue/language-core@1.8.22(typescript@5.2.2):
+    resolution: {integrity: sha512-bsMoJzCrXZqGsxawtUea1cLjUT9dZnDsy5TuZ+l1fxRMzUGQUG9+Ypq4w//CqpWmrx7nIAJpw2JVF/t258miRw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@volar/language-core': 1.10.10
+      '@volar/source-map': 1.10.10
+      '@vue/compiler-dom': 3.3.8
+      '@vue/shared': 3.3.8
+      computeds: 0.0.1
+      minimatch: 9.0.3
+      muggle-string: 0.3.1
+      typescript: 5.2.2
+      vue-template-compiler: 2.7.14
+    dev: true
+
+  /@vue/reactivity-transform@3.3.8:
+    resolution: {integrity: sha512-49CvBzmZNtcHua0XJ7GdGifM8GOXoUMOX4dD40Y5DxI3R8OUhMlvf2nvgUAcPxaXiV5MQQ1Nwy09ADpnLQUqRw==}
+    dependencies:
+      '@babel/parser': 7.23.3
+      '@vue/compiler-core': 3.3.8
+      '@vue/shared': 3.3.8
+      estree-walker: 2.0.2
+      magic-string: 0.30.5
+
+  /@vue/reactivity@3.3.8:
+    resolution: {integrity: sha512-ctLWitmFBu6mtddPyOKpHg8+5ahouoTCRtmAHZAXmolDtuZXfjL2T3OJ6DL6ezBPQB1SmMnpzjiWjCiMYmpIuw==}
+    dependencies:
+      '@vue/shared': 3.3.8
+
+  /@vue/runtime-core@3.3.8:
+    resolution: {integrity: sha512-qurzOlb6q26KWQ/8IShHkMDOuJkQnQcTIp1sdP4I9MbCf9FJeGVRXJFr2mF+6bXh/3Zjr9TDgURXrsCr9bfjUw==}
+    dependencies:
+      '@vue/reactivity': 3.3.8
+      '@vue/shared': 3.3.8
+
+  /@vue/runtime-dom@3.3.8:
+    resolution: {integrity: sha512-Noy5yM5UIf9UeFoowBVgghyGGPIDPy1Qlqt0yVsUdAVbqI8eeMSsTqBtauaEoT2UFXUk5S64aWVNJN4MJ2vRdA==}
+    dependencies:
+      '@vue/runtime-core': 3.3.8
+      '@vue/shared': 3.3.8
+      csstype: 3.1.2
+
+  /@vue/server-renderer@3.3.8(vue@3.3.8):
+    resolution: {integrity: sha512-zVCUw7RFskvPuNlPn/8xISbrf0zTWsTSdYTsUTN1ERGGZGVnRxM2QZ3x1OR32+vwkkCm0IW6HmJ49IsPm7ilLg==}
+    peerDependencies:
+      vue: 3.3.8
+    dependencies:
+      '@vue/compiler-ssr': 3.3.8
+      '@vue/shared': 3.3.8
+      vue: 3.3.8(typescript@5.2.2)
+
+  /@vue/shared@3.3.8:
+    resolution: {integrity: sha512-8PGwybFwM4x8pcfgqEQFy70NaQxASvOC5DJwLQfpArw1UDfUXrJkdxD3BhVTMS+0Lef/TU7YO0Jvr0jJY8T+mw==}
+
+  /balanced-match@1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+    dev: true
+
+  /brace-expansion@2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
+    dev: true
+
+  /computeds@0.0.1:
+    resolution: {integrity: sha512-7CEBgcMjVmitjYo5q8JTJVra6X5mQ20uTThdK+0kR7UEaDrAWEQcRiBtWJzga4eRpP6afNwwLsX2SET2JhVB1Q==}
+    dev: true
+
+  /csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+
+  /de-indent@1.0.2:
+    resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
+
+  /esbuild@0.18.20:
+    resolution: {integrity: sha512-ceqxoedUrcayh7Y7ZX6NdbbDzGROiyVBgC4PriJThBKSVPWnnFHZAkfI1lJT8QFkOwH4qOS2SJkS4wvpGl8BpA==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@esbuild/linux-loong64': 0.14.54
-      esbuild-android-64: 0.14.54
-      esbuild-android-arm64: 0.14.54
-      esbuild-darwin-64: 0.14.54
-      esbuild-darwin-arm64: 0.14.54
-      esbuild-freebsd-64: 0.14.54
-      esbuild-freebsd-arm64: 0.14.54
-      esbuild-linux-32: 0.14.54
-      esbuild-linux-64: 0.14.54
-      esbuild-linux-arm: 0.14.54
-      esbuild-linux-arm64: 0.14.54
-      esbuild-linux-mips64le: 0.14.54
-      esbuild-linux-ppc64le: 0.14.54
-      esbuild-linux-riscv64: 0.14.54
-      esbuild-linux-s390x: 0.14.54
-      esbuild-netbsd-64: 0.14.54
-      esbuild-openbsd-64: 0.14.54
-      esbuild-sunos-64: 0.14.54
-      esbuild-windows-32: 0.14.54
-      esbuild-windows-64: 0.14.54
-      esbuild-windows-arm64: 0.14.54
+      '@esbuild/android-arm': 0.18.20
+      '@esbuild/android-arm64': 0.18.20
+      '@esbuild/android-x64': 0.18.20
+      '@esbuild/darwin-arm64': 0.18.20
+      '@esbuild/darwin-x64': 0.18.20
+      '@esbuild/freebsd-arm64': 0.18.20
+      '@esbuild/freebsd-x64': 0.18.20
+      '@esbuild/linux-arm': 0.18.20
+      '@esbuild/linux-arm64': 0.18.20
+      '@esbuild/linux-ia32': 0.18.20
+      '@esbuild/linux-loong64': 0.18.20
+      '@esbuild/linux-mips64el': 0.18.20
+      '@esbuild/linux-ppc64': 0.18.20
+      '@esbuild/linux-riscv64': 0.18.20
+      '@esbuild/linux-s390x': 0.18.20
+      '@esbuild/linux-x64': 0.18.20
+      '@esbuild/netbsd-x64': 0.18.20
+      '@esbuild/openbsd-x64': 0.18.20
+      '@esbuild/sunos-x64': 0.18.20
+      '@esbuild/win32-arm64': 0.18.20
+      '@esbuild/win32-ia32': 0.18.20
+      '@esbuild/win32-x64': 0.18.20
     dev: true
 
-  /estree-walker/2.0.2:
-    resolution: {integrity: sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/estree-walker/-/estree-walker-2.0.2.tgz}
+  /estree-walker@2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
-  /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/fs.realpath/-/fs.realpath-1.0.0.tgz}
-    dev: true
-
-  /fsevents/2.3.2:
-    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/fsevents/-/fsevents-2.3.2.tgz}
+  /fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /fstream/1.0.12:
-    resolution: {integrity: sha1-Touo7i1Ivk99DeUFRVVI6uWTIEU=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/fstream/-/fstream-1.0.12.tgz}
-    engines: {node: '>=0.6'}
-    dependencies:
-      graceful-fs: 4.2.10
-      inherits: 2.0.4
-      mkdirp: 0.5.6
-      rimraf: 2.7.1
-    dev: true
-
-  /function-bind/1.1.1:
-    resolution: {integrity: sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/function-bind/-/function-bind-1.1.1.tgz}
-    dev: true
-
-  /glob/7.2.3:
-    resolution: {integrity: sha1-uN8PuAK7+o6JvR2Ti04WV47UTys=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/glob/-/glob-7.2.3.tgz}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.1.2
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: true
-
-  /graceful-fs/4.2.10:
-    resolution: {integrity: sha1-FH06AG2kyjzhRyjHrvwofDZ9emw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/graceful-fs/-/graceful-fs-4.2.10.tgz}
-    dev: true
-
-  /has/1.0.3:
-    resolution: {integrity: sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/has/-/has-1.0.3.tgz}
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      function-bind: 1.1.1
-    dev: true
-
-  /he/1.2.0:
-    resolution: {integrity: sha1-hK5l+n6vsWX922FWauFLrwVmTw8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/he/-/he-1.2.0.tgz}
+  /he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
-    dev: false
 
-  /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/inflight/-/inflight-1.0.6.tgz}
+  /lru-cache@6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
     dependencies:
-      once: 1.4.0
-      wrappy: 1.0.2
+      yallist: 4.0.0
     dev: true
 
-  /inherits/2.0.4:
-    resolution: {integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/inherits/-/inherits-2.0.4.tgz}
-    dev: true
-
-  /is-core-module/2.11.0:
-    resolution: {integrity: sha1-rUyz44Y+gUUjyW8/WNJsxXD/AUQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-core-module/-/is-core-module-2.11.0.tgz}
+  /magic-string@0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
+    engines: {node: '>=12'}
     dependencies:
-      has: 1.0.3
-    dev: true
+      '@jridgewell/sourcemap-codec': 1.4.15
 
-  /isarray/1.0.0:
-    resolution: {integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/isarray/-/isarray-1.0.0.tgz}
-    dev: true
-
-  /listenercount/1.0.1:
-    resolution: {integrity: sha1-hMinKrWcRyUyFIDJdeZQg0LnCTc=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/listenercount/-/listenercount-1.0.1.tgz}
-    dev: true
-
-  /magic-string/0.25.9:
-    resolution: {integrity: sha1-3n+fr5HvihyR0CwuUxTIJ3283Rw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/magic-string/-/magic-string-0.25.9.tgz}
+  /minimatch@9.0.3:
+    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
+    engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      sourcemap-codec: 1.4.8
-
-  /minimatch/3.1.2:
-    resolution: {integrity: sha1-Gc0ZS/0+Qo8EmnCBfAONiatL41s=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/minimatch/-/minimatch-3.1.2.tgz}
-    dependencies:
-      brace-expansion: 1.1.11
+      brace-expansion: 2.0.1
     dev: true
 
-  /minimist/1.2.7:
-    resolution: {integrity: sha1-2qHE2R9Qc5BDfGqLwBB45wAMTRg=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/minimist/-/minimist-1.2.7.tgz}
+  /muggle-string@0.3.1:
+    resolution: {integrity: sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==}
     dev: true
 
-  /mkdirp/0.5.6:
-    resolution: {integrity: sha1-fe8D0kMtyuS6HWEURcSDlgYiVfY=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/mkdirp/-/mkdirp-0.5.6.tgz}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.7
-    dev: true
-
-  /nanoid/3.3.4:
-    resolution: {integrity: sha1-cwtn480J4t6s8DwCfIHJ2dvF6Ks=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/nanoid/-/nanoid-3.3.4.tgz}
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/once/-/once-1.4.0.tgz}
-    dependencies:
-      wrappy: 1.0.2
+  /path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
     dev: true
 
-  /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/path-is-absolute/-/path-is-absolute-1.0.1.tgz}
-    engines: {node: '>=0.10.0'}
-    dev: true
+  /picocolors@1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
-  /path-parse/1.0.7:
-    resolution: {integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/path-parse/-/path-parse-1.0.7.tgz}
-    dev: true
-
-  /picocolors/1.0.0:
-    resolution: {integrity: sha1-y1vcdP8/UYkiNur3nWi8RFZKuBw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/picocolors/-/picocolors-1.0.0.tgz}
-
-  /postcss/8.4.19:
-    resolution: {integrity: sha1-YReOKt0jaxc1GJfIvMC0yOyrVvw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/postcss/-/postcss-8.4.19.tgz}
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.4
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /process-nextick-args/2.0.1:
-    resolution: {integrity: sha1-eCDZsWEgzFXKmud5JoCufbptf+I=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/process-nextick-args/-/process-nextick-args-2.0.1.tgz}
-    dev: true
-
-  /readable-stream/2.3.7:
-    resolution: {integrity: sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/readable-stream/-/readable-stream-2.3.7.tgz}
-    dependencies:
-      core-util-is: 1.0.3
-      inherits: 2.0.4
-      isarray: 1.0.0
-      process-nextick-args: 2.0.1
-      safe-buffer: 5.1.2
-      string_decoder: 1.1.1
-      util-deprecate: 1.0.2
-    dev: true
-
-  /resolve/1.22.1:
-    resolution: {integrity: sha1-J8suu1P5GrtJRwqSi7p1WAZqwXc=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/resolve/-/resolve-1.22.1.tgz}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.11.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-    dev: true
-
-  /rimraf/2.7.1:
-    resolution: {integrity: sha1-NXl/E6f9rcVmFCwp1PB8ytSD4+w=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/rimraf/-/rimraf-2.7.1.tgz}
-    hasBin: true
-    dependencies:
-      glob: 7.2.3
-    dev: true
-
-  /rollup/2.77.3:
-    resolution: {integrity: sha1-jwBBjTonQANuFd62U77RqQ7gzBI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/rollup/-/rollup-2.77.3.tgz}
-    engines: {node: '>=10.0.0'}
+  /rollup@3.29.4:
+    resolution: {integrity: sha512-oWzmBZwvYrU0iJHtDmhsm662rC15FRXmcjCk1xD771dFDx5jJ02ufAQQTn0etB2emNk4J9EZg/yWKpsn9BWGRw==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /safe-buffer/5.1.2:
-    resolution: {integrity: sha1-mR7GnSluAxN0fVm9/St0XDX4go0=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/safe-buffer/-/safe-buffer-5.1.2.tgz}
-    dev: true
-
-  /setimmediate/1.0.5:
-    resolution: {integrity: sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/setimmediate/-/setimmediate-1.0.5.tgz}
-    dev: true
-
-  /source-map-js/1.0.2:
-    resolution: {integrity: sha1-rbw2HZxi3zgBJefxYfccgm8eSQw=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/source-map-js/-/source-map-js-1.0.2.tgz}
-    engines: {node: '>=0.10.0'}
-
-  /source-map/0.6.1:
-    resolution: {integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/source-map/-/source-map-0.6.1.tgz}
-    engines: {node: '>=0.10.0'}
-
-  /sourcemap-codec/1.4.8:
-    resolution: {integrity: sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz}
-    deprecated: Please use @jridgewell/sourcemap-codec instead
-
-  /string_decoder/1.1.1:
-    resolution: {integrity: sha1-nPFhG6YmhdcDCunkujQUnDrwP8g=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/string_decoder/-/string_decoder-1.1.1.tgz}
+  /semver@7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
+    engines: {node: '>=10'}
+    hasBin: true
     dependencies:
-      safe-buffer: 5.1.2
+      lru-cache: 6.0.0
     dev: true
 
-  /supports-preserve-symlinks-flag/1.0.0:
-    resolution: {integrity: sha1-btpL00SjyUrqN21MwxvHcxEDngk=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz}
-    engines: {node: '>= 0.4'}
-    dev: true
+  /source-map-js@1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
 
-  /to-fast-properties/2.0.0:
-    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/to-fast-properties/-/to-fast-properties-2.0.0.tgz}
+  /to-fast-properties@2.0.0:
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
 
-  /traverse/0.3.9:
-    resolution: {integrity: sha1-cXuPIgzAu3tE5AUUwisui7xw2Lk=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/traverse/-/traverse-0.3.9.tgz}
-    dev: true
-
-  /typescript/4.9.3:
-    resolution: {integrity: sha1-OuowfBdGuMOEQ12Kw2uKLlgNhds=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/typescript/-/typescript-4.9.3.tgz}
-    engines: {node: '>=4.2.0'}
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
-  /unzipper/0.10.11:
-    resolution: {integrity: sha1-C0mRRGRyy9uS7nQDkJ8mwkGceC4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/unzipper/-/unzipper-0.10.11.tgz}
-    dependencies:
-      big-integer: 1.6.51
-      binary: 0.3.0
-      bluebird: 3.4.7
-      buffer-indexof-polyfill: 1.0.2
-      duplexer2: 0.1.4
-      fstream: 1.0.12
-      graceful-fs: 4.2.10
-      listenercount: 1.0.1
-      readable-stream: 2.3.7
-      setimmediate: 1.0.5
-    dev: true
-
-  /util-deprecate/1.0.2:
-    resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/util-deprecate/-/util-deprecate-1.0.2.tgz}
-    dev: true
-
-  /vite/2.9.15:
-    resolution: {integrity: sha1-KFjdWyviaqOUooPmIyQoGJJUbws=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vite/-/vite-2.9.15.tgz}
-    engines: {node: '>=12.2.0'}
+  /vite@4.5.0:
+    resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
+      '@types/node': '>= 14'
       less: '*'
+      lightningcss: ^1.21.0
       sass: '*'
       stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
     peerDependenciesMeta:
+      '@types/node':
+        optional: true
       less:
+        optional: true
+      lightningcss:
         optional: true
       sass:
         optional: true
       stylus:
         optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
     dependencies:
-      esbuild: 0.14.54
-      postcss: 8.4.19
-      resolve: 1.22.1
-      rollup: 2.77.3
+      esbuild: 0.18.20
+      postcss: 8.4.31
+      rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /vue-template-compiler/2.7.14:
-    resolution: {integrity: sha1-RUW337iAkHRMFXeuWsP5ZOYWNLE=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz}
+  /vue-template-compiler@2.7.14:
+    resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
-    dev: false
 
-  /vue-tsc/0.0.24:
-    resolution: {integrity: sha1-DNkNtnn1PqFpQlS4Zj/bPWJKCHI=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue-tsc/-/vue-tsc-0.0.24.tgz}
+  /vue-tsc@1.8.22(typescript@5.2.2):
+    resolution: {integrity: sha512-j9P4kHtW6eEE08aS5McFZE/ivmipXy0JzrnTgbomfABMaVKx37kNBw//irL3+LlE3kOo63XpnRigyPC3w7+z+A==}
     hasBin: true
+    peerDependencies:
+      typescript: '*'
     dependencies:
-      unzipper: 0.10.11
+      '@volar/typescript': 1.10.10
+      '@vue/language-core': 1.8.22(typescript@5.2.2)
+      semver: 7.5.4
+      typescript: 5.2.2
     dev: true
 
-  /vue/3.2.45:
-    resolution: {integrity: sha1-lKEWeERH6329iSFneEYZ/vN5s8g=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue/-/vue-3.2.45.tgz}
+  /vue3-hotkey@1.0.5(typescript@5.2.2):
+    resolution: {integrity: sha512-4p2Zeem5J+zpWiMi/NJEGggjpqlm65sBl2m1T31q9gTdRv62Y3fsNQOwaaBAK5T/N29+CIiOnsVF1Wj5NmTuEw==}
+    engines: {node: '>=16.x'}
     dependencies:
-      '@vue/compiler-dom': 3.2.45
-      '@vue/compiler-sfc': 3.2.45
-      '@vue/runtime-dom': 3.2.45
-      '@vue/server-renderer': 3.2.45_vue@3.2.45
-      '@vue/shared': 3.2.45
-    dev: false
-
-  /vue3-hotkey/1.0.2:
-    resolution: {integrity: sha1-r22NMz1/ZK3faULw1jRw4Xznzp4=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue3-hotkey/-/vue3-hotkey-1.0.2.tgz}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@types/express': 4.17.8
-      '@vue/test-utils': 2.2.5_vue@3.2.45
-      vue: 3.2.45
+      vue: 3.3.8(typescript@5.2.2)
       vue-template-compiler: 2.7.14
+    transitivePeerDependencies:
+      - typescript
     dev: false
 
-  /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=, tarball: https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/wrappy/-/wrappy-1.0.2.tgz}
+  /vue@3.3.8(typescript@5.2.2):
+    resolution: {integrity: sha512-5VSX/3DabBikOXMsxzlW8JyfeLKlG9mzqnWgLQLty88vdZL7ZJgrdgBOmrArwxiLtmS+lNNpPcBYqrhE6TQW5w==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/compiler-dom': 3.3.8
+      '@vue/compiler-sfc': 3.3.8
+      '@vue/runtime-dom': 3.3.8
+      '@vue/server-renderer': 3.3.8(vue@3.3.8)
+      '@vue/shared': 3.3.8
+      typescript: 5.2.2
+
+  /yallist@4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true

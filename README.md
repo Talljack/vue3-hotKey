@@ -23,6 +23,9 @@ setup() {
     }
   ])
   const stop = useHotkey(hotkeys.value)
+
+  // 取消监听快捷键
+  stop()
 }
 ```
 
