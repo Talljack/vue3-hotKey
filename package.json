@@ -25,8 +25,6 @@
   },
   "homepage": "https://github.com/Talljack/vue3-hotKey#readme",
   "dependencies": {
-    "@types/express": "4.17.8",
-    "@vue/test-utils": "^2.4.1",
     "vue": "^3.3.4",
     "vue-template-compiler": "^2.7.14"
   },
@@ -48,7 +46,9 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6",
-    "vue-tsc": "^1.8.15"
+    "vue-tsc": "^1.8.15",
+    "@types/express": "4.17.8",
+    "@vue/test-utils": "^2.4.1"
   },
   "files": [
     "dist",
