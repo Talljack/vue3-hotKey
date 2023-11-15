@@ -1,12 +1,12 @@
 <template>
   <img alt="Vue logo" src="../assets/logo.png" />
   <div @click='handleCount'>{{count}}</div>
-  <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
+  <button @click="handleCancel" style="outline: none;">取消快捷键</button>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import useHotkey, { HotKey } from 'vue3-hotkey'
+import useHotkey, { HotKey, RemoveHandler } from "vue3-hotkey"
 
 export default defineComponent({
   name: 'App',
@@ -41,12 +41,13 @@ export default defineComponent({
     const handleCount = () => {
       countRef.value ++
     }
-    setTimeout(() => {
-      stopArr.forEach(fn => fn())
-    }, 2000);
+    const handleCancel = () => {
+      stopArr.forEach((item: RemoveHandler) => item())
+    }
     return {
       count: countRef,
-      handleCount
+      handleCount,
+      handleCancel
     }
   }
 })
