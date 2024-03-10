@@ -1,9 +1,19 @@
 # vue3-hotKey
-Vue3 hooks of Keyboard events
+Vue3 hooks of Keyboard events.
+
+## 📦 Install
+
+```bash
+pnpm i vue3-hotkey
+
+or
+
+yarn add vue3-hotkey
+```
 
 ## 🦄 Usage
 ```ts
-import useHotkey, { HotKey } from 'vue3-hotkey'
+import useHotkey, { HotKey, RemoveHandler } from 'vue3-hotkey'
 import { ref } from 'vue'
 setup() {
   const hotkeys = ref<HotKey[]>([
@@ -22,21 +32,13 @@ setup() {
       }
     }
   ])
-  const stop = useHotkey(hotkeys.value)
+  const stopArr = useHotkey(hotkeys.value)
 
   // 取消监听快捷键
-  stop()
+  const removeHotKeys = (hk: HotKey) => {
+    stopArr.foreach((item: RemoveHandler) => item())
+  }
 }
-```
-
-## 📦 Install
-
-```bash
-pnpm i vue3-hotkey
-
-or
-
-yarn add vue3-hotkey
 ```
 
 ## 🌸 Thanks
