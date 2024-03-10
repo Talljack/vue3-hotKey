@@ -1,5 +1,12 @@
 # vue3-hotKey
-Vue3 hooks of Keyboard events.
+
+<p align='center'>
+  <img src='/public/logo.png' width="240" />
+</p>
+
+<p align='center'>
+  <b>Vue3 hooks of Keyboard input.</b>
+</p>
 
 ## 📦 Install
 
@@ -49,3 +56,10 @@ This project is heavily inspired by the following awesome projects.
 ## 📄 License
 
 [MIT License](https://github.com/Talljack/vue3-hotKey/blob/main/LICENSE) © 2021-PRESENT [Talljack](https://github.com/Talljack)
+
+## 🍺 Sponsor
+
+如果大家喜欢我的项目的话，可以请我喝杯咖啡哦，谢谢！
+<a href="https://www.yugangcao.com/sponsors">
+  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Talljack&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+</a>
