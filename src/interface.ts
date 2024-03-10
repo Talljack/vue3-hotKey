@@ -3,6 +3,7 @@ export interface HotKey {
   preventDefault?: boolean
   repeat?: boolean
   handler: (keys: string[], e: KeyboardEvent) => any
+  [key: string]: any;
 }
 
 export const KeyCodeMap = {
@@ -24,4 +25,4 @@ export const KeyCodeMap = {
   bottom: "ArrowDown"
 }
 
-export type RemoveHandler = () => void
+export type RemoveHandler = (hk?: HotKey) => void
