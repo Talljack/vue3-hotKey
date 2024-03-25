@@ -21,7 +21,7 @@ devDependencies:
     version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
   '@testing-library/vue':
     specifier: ^8.0.2
-    version: 8.0.2(@vue/compiler-sfc@3.4.21)(vue@3.4.21)
+    version: 8.0.3(@vue/compiler-sfc@3.4.21)(vue@3.4.21)
   '@types/express':
     specifier: ^4.17.21
     version: 4.17.21
@@ -889,8 +889,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/vue@8.0.2(@vue/compiler-sfc@3.4.21)(vue@3.4.21):
-    resolution: {integrity: sha512-A8wWX+qQn0o0izpQWnGCpwQt8wAdpsVP8vPP2h5Q/jcGhZ5yKXz9PPUqhQv+45LTFaWlyRf8bArTVaB/KFFd5A==}
+  /@testing-library/vue@8.0.3(@vue/compiler-sfc@3.4.21)(vue@3.4.21):
+    resolution: {integrity: sha512-wSsbNlZ69ZFQgVlHMtc/ZC/g9BHO7MhyDrd4nHyfEubtMr3kToN/w4/BsSBknGIF8w9UmPbsgbIuq/CbdBHzCA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vue/compiler-sfc': '>= 3'
