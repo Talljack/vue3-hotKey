@@ -1,57 +1,57 @@
-import { HotKey, KeyCodeMap } from './interface'
+import { HotKey, KeyCodeMap } from "./interface";
 class HotKeyManager {
-  readonly registeredHotkeys: Record<string, HotKey[]> = {}
-  readonly pressedKeys = new Map<string, boolean>()
+  readonly registeredHotkeys: Record<string, HotKey[]> = {};
+  readonly pressedKeys = new Map<string, boolean>();
 
-  constructor () {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('keydown', (e) => {
-        this.pressedKeys.set(e.key, e.repeat)
-        const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()))
+  constructor() {
+    if (typeof window !== "undefined") {
+      window.addEventListener("keydown", (e) => {
+        this.pressedKeys.set(e.key, e.repeat);
+        const keyComb = this.getKeyComb(Array.from(this.pressedKeys.keys()));
         this.registeredHotkeys[keyComb]?.forEach((hotKey) => {
           if (!e.repeat || hotKey?.repeat) {
-            if (hotKey.preventDefault) e.preventDefault()
-            hotKey.handler([...hotKey.keys], e)
+            if (hotKey.preventDefault) e.preventDefault();
+            hotKey.handler([...hotKey.keys], e);
           }
-        })
-      })
-      window.addEventListener('keyup', (e) => {
+        });
+      });
+      window.addEventListener("keyup", (e) => {
         if (this.pressedKeys.has(e.key)) {
-          this.pressedKeys.delete(e.key)
+          this.pressedKeys.delete(e.key);
         }
-      })
+      });
     }
   }
 
   registerHotKey = (hotkey: HotKey) => {
-    const keyComb = this.getKeyComb([...hotkey.keys])
+    const keyComb = this.getKeyComb([...hotkey.keys]);
     if (!this.registeredHotkeys[keyComb]) {
-      this.registeredHotkeys[keyComb] = []
+      this.registeredHotkeys[keyComb] = [];
     }
-    this.registeredHotkeys[keyComb].push(hotkey)
-  }
+    this.registeredHotkeys[keyComb].push(hotkey);
+  };
 
   getKeyComb = (keys: string[]) => {
-    const convertKeys = keys.map(item => {
+    const convertKeys = keys.map((item) => {
       // @ts-expect-error
-      const stringKey = KeyCodeMap[item]
+      const stringKey = KeyCodeMap[item];
       if (stringKey) {
-        return stringKey
+        return stringKey;
       }
-      return item
-    })
-    return convertKeys.sort().join(' ')
-  }
+      return item;
+    });
+    return convertKeys.sort().join(" ");
+  };
 
   removeHotKey = (hotKey: HotKey) => {
-    const keyComb = this.getKeyComb([...hotKey.keys])
-    const index = this.registeredHotkeys[keyComb]?.indexOf(hotKey) ?? -1
+    const keyComb = this.getKeyComb([...hotKey.keys]);
+    const index = this.registeredHotkeys[keyComb]?.indexOf(hotKey) ?? -1;
     if (index !== -1) {
-      this.registeredHotkeys[keyComb].splice(index, 1)
-      return true
+      this.registeredHotkeys[keyComb].splice(index, 1);
+      return true;
     }
-    return false
-  }
+    return false;
+  };
 }
 
-export default new HotKeyManager()
+export default new HotKeyManager();
