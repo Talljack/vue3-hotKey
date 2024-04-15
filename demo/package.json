@@ -11,14 +11,14 @@
   "dependencies": {
     "naive-ui": "^2.38.1",
     "vue": "^3.4.21",
-    "vue3-hotkey": "^1.0.5"
+    "vue3-hotkey": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.21",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.5",
-    "vue-tsc": "^2.0.6"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.0.13"
   },
   "author": "Talljack",
   "license": "ISC"
