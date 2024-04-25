@@ -7,7 +7,7 @@ module.exports = {
     customExportConditions: ['node', 'node-addons'],
   },
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': 'ts-jest',
   },
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',

@@ -19,7 +19,7 @@ yarn add vue3-hotkey
 ```
 
 ## 🦄 Usage
-```ts
+```typescript
 import useHotkey, { HotKey, RemoveHandler } from 'vue3-hotkey'
 import { ref } from 'vue'
 setup() {
