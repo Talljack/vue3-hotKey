@@ -10,31 +10,43 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    environment: test
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+  lint:
+    runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.1
+        with:
+          version: latest
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm run lint:fix
+  test:
+    environment: test
+
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
         with:
           version: latest
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: pnpm install
-      # TODO:添加lint
       - name: Test
         run: pnpm run test
 
