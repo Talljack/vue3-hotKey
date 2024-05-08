@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   roots: ['<rootDir>'],
   testRegex: '(/test/.*|(\\.|/)(test|spec))\\.[jt]sx?$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'vue'],

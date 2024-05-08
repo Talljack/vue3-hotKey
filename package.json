@@ -33,7 +33,8 @@
     "lint:fix": "eslint . --fix",
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
     "build:types": "tsc --emitDeclarationOnly --declaration --project tsconfig.json --declarationDir dist/types",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "vue": "^3.4.27",
@@ -57,11 +58,19 @@
     "eslint-plugin-vue": "^9.25.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.11.1",
     "talljack-eslint-config": "^0.2.4",
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.14"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
