@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "naive-ui": "^2.38.1",
-    "vue": "^3.4.25",
+    "vue": "^3.4.27",
     "vue3-hotkey": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "@vue/compiler-sfc": "^3.4.25",
+    "@vue/compiler-sfc": "^3.4.27",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^5.2.11",
     "vue-tsc": "^2.0.14"
   }
 }
