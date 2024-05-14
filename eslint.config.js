@@ -1,3 +1,4 @@
+// @ts-check
 import createEslintConfig from 'talljack-eslint-config'
 
 export default createEslintConfig({
@@ -5,7 +6,9 @@ export default createEslintConfig({
   vue: true,
   formatters: true,
   markdown: true,
+  test: true,
   rules: {
     '@typescript-eslint/no-explicit-any': 'warn',
   },
+  ignores: ['README.md'],
 })
