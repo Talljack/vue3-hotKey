@@ -1,6 +1,7 @@
 {
   "name": "demo",
   "version": "1.0.0",
+  "packageManager": "pnpm@9.1.0",
   "description": "vue3-hotkey demo",
   "author": "Talljack",
   "license": "ISC",
@@ -20,6 +21,6 @@
     "@vue/compiler-sfc": "^3.4.27",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
-    "vue-tsc": "^2.0.17"
+    "vue-tsc": "^2.0.19"
   }
 }

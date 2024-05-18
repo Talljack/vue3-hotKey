@@ -2,7 +2,7 @@
   "name": "vue3-hotkey",
   "type": "module",
   "version": "1.0.6",
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.1.0",
   "description": "Hotkey Hooks for Vue3",
   "author": "Talljack <yugang.cao12@gmail.com>",
   "license": "MIT",
@@ -62,7 +62,7 @@
     "talljack-eslint-config": "^0.2.6",
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.5",
-    "vue-tsc": "^2.0.17"
+    "vue-tsc": "^2.0.19"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
