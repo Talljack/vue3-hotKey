@@ -60,7 +60,7 @@
     "rimraf": "^5.0.7",
     "simple-git-hooks": "^2.11.1",
     "talljack-eslint-config": "^0.2.6",
-    "ts-jest": "^29.1.2",
+    "ts-jest": "^29.1.3",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.19"
   },
