@@ -12,15 +12,15 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "naive-ui": "^2.38.2",
-    "vue": "^3.4.31",
+    "naive-ui": "^2.39.0",
+    "vue": "^3.4.33",
     "vue3-hotkey": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vue/compiler-sfc": "^3.4.31",
+    "@vue/compiler-sfc": "^3.4.33",
     "typescript": "^5.5.3",
-    "vite": "^5.3.3",
+    "vite": "^5.3.4",
     "vue-tsc": "^2.0.26"
   }
 }
